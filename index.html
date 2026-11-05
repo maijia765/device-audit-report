@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>设备审查报告 · OPPO PFZM10（Reno8 Pro+）</title>
+<style>
+:root{
+  --bg:#F4F5F3; --surface:#FFFFFF; --ink:#191D21; --ink2:#41474E; --muted:#6B7280;
+  --line:#DFE3E0; --line2:#C9CFCA;
+  --accent:#0B5FA5; --accent-ink:#FFFFFF; --accent-soft:#E7F0F8;
+  --code-bg:#14181D; --code-ink:#D7DEE7; --chip:#EEF1F3;
+  --th-bg:#EDF1F2; --zebra:#F7F9F9;
+  --serif:"Noto Serif CJK SC","Songti SC","Source Han Serif SC",serif;
+  --sans:"Noto Sans CJK SC","PingFang SC","Source Han Sans SC","Microsoft YaHei",system-ui,sans-serif;
+  --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,"Noto Sans Mono CJK SC",monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#101315; --surface:#171B1E; --ink:#E8EBE9; --ink2:#C3C9C6; --muted:#8E9791;
+    --line:#272D30; --line2:#394146;
+    --accent:#5FA8DD; --accent-ink:#0D1418; --accent-soft:#1B2A36;
+    --code-bg:#0C0F12; --code-ink:#CFD8E0; --chip:#232A2E;
+    --th-bg:#1E2427; --zebra:#1A1F22;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+  font-size:16.5px;line-height:1.75;letter-spacing:.01em}
+header.band{background:#14181D;color:#EDEFF2;padding:44px 20px 34px;border-bottom:4px solid var(--accent)}
+.band-in{max-width:880px;margin:0 auto}
+.band .kicker{font-size:12.5px;letter-spacing:.28em;color:#8FA6B8;margin:0 0 10px}
+.band h1{font-family:var(--serif);font-size:31px;line-height:1.3;margin:0 0 8px;font-weight:700}
+.band .sub{color:#B9C2CB;font-size:14.5px;margin:0 0 20px}
+.dl{display:flex;gap:10px;flex-wrap:wrap}
+.dl a{display:inline-block;padding:8px 16px;border-radius:8px;font-size:14px;text-decoration:none;
+  border:1px solid #3A454F;color:#EDEFF2;background:#1C2229}
+.dl a.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+.dl a:hover{filter:brightness(1.15)}
+main{max-width:880px;margin:0 auto;padding:10px 20px 70px}
+article{background:var(--surface);border:1px solid var(--line);border-radius:14px;
+  padding:38px 42px;margin-top:26px;box-shadow:0 1px 3px rgba(20,24,29,.05)}
+article h1{font-family:var(--serif);font-size:27px;line-height:1.35;margin:6px 0 18px;
+  padding-bottom:14px;border-bottom:2px solid var(--ink)}
+article h2{font-family:var(--serif);font-size:22px;line-height:1.4;margin:42px 0 14px;
+  padding-bottom:8px;border-bottom:1px solid var(--line2)}
+article h3{font-size:17.5px;margin:30px 0 10px;color:var(--ink)}
+article p{margin:11px 0;color:var(--ink)}
+article ul,article ol{margin:10px 0;padding-left:26px}
+article li{margin:5px 0}
+article strong{font-weight:700}
+article a{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)}
+article hr{border:none;border-top:1px solid var(--line2);margin:30px 0}
+code{font-family:var(--mono);font-size:.86em;background:var(--chip);color:var(--ink);
+  padding:1.5px 6px;border-radius:5px;word-break:break-all}
+pre{background:var(--code-bg);color:var(--code-ink);border-radius:10px;padding:16px 18px;
+  overflow-x:auto;margin:14px 0;line-height:1.6}
+pre code{background:none;color:inherit;padding:0;font-size:12.8px;word-break:normal;white-space:pre}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:10px;margin:16px 0}
+table{border-collapse:collapse;width:100%;min-width:600px;font-size:13.8px;line-height:1.6}
+th,td{border-bottom:1px solid var(--line);border-right:1px solid var(--line);
+  padding:8px 11px;text-align:left;vertical-align:top}
+th:last-child,td:last-child{border-right:none}
+tr:last-child td{border-bottom:none}
+thead th{background:var(--th-bg);font-weight:700;white-space:nowrap}
+tbody tr:nth-child(even){background:var(--zebra)}
+td code,th code{white-space:nowrap;word-break:normal}
+footer{max-width:880px;margin:0 auto;padding:0 20px 44px;color:var(--muted);font-size:13px}
+@media (max-width:640px){
+  body{font-size:15.5px}
+  article{padding:24px 18px}
+  .band h1{font-size:25px}
+  article h1{font-size:23px}
+  article h2{font-size:19.5px}
+}
+@page{
+  size:A4;margin:17mm 14mm 18mm;
+  @bottom-left{content:"设备审查报告 · OPPO PFZM10（Reno8 Pro+）";font-size:8pt;color:#8A9199;font-family:var(--sans)}
+  @bottom-right{content:counter(page) " / " counter(pages);font-size:8pt;color:#8A9199;font-family:var(--sans)}
+}
+@media print{
+  :root{--bg:#fff;--surface:#fff;--ink:#14171A;--ink2:#33393F;--muted:#5C646C;
+    --line:#D8DCD9;--line2:#B9BEBB;--chip:#EFF1F2;--th-bg:#EDF0F1;--zebra:#F7F8F8;--accent:#0B5FA5}
+  body{font-size:10.3pt;line-height:1.62;background:#fff}
+  header.band,footer,.dl{display:none}
+  main{max-width:none;padding:0}
+  article{border:none;border-radius:0;box-shadow:none;padding:0;margin:0}
+  .tw{overflow:visible;border:none;border-radius:0}
+  table{min-width:0;font-size:8.4pt}
+  th,td{padding:4.5px 6px}
+  thead th{white-space:normal}
+  pre{white-space:pre-wrap;overflow:visible}
+  pre code{font-size:7.9pt;white-space:pre-wrap;word-break:break-all}
+  code{word-break:break-all}
+  td code,th code{white-space:normal}
+  h2,h3{page-break-after:avoid}
+  tr{page-break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<header class="band">
+  <div class="band-in">
+    <p class="kicker">DEVICE AUDIT REPORT</p>
+    <h1>设备审查报告</h1>
+    <p class="sub">OPPO PFZM10（Reno8 Pro+）· Android 15 / ColorOS 15 · 审查日期 2026-11-05</p>
+    <div class="dl">
+      <a class="primary" href="audit-report-2026-11-05.pdf">下载 PDF 版</a>
+      <a href="audit-report-2026-11-05.md">Markdown 源文件</a>
+    </div>
+  </div>
+</header>
+<main>
+<article>
+<h1>设备审查报告</h1>
+<p><strong>审查对象：</strong> OPPO PFZM10（Reno8 Pro+），Android 15 / ColorOS 15
+<strong>adb 采集时间：</strong> 2026-11-06 01:13 — 02:30（CST）
+<strong>流量数据覆盖：</strong> 2026-11-05 20:00 — 2026-11-06 04:00（CST，2 小时一桶，最后一桶在采集时仍在累积）
+<strong>报告生成时间：</strong> 2026-11-06 01:25（CST）
+<strong>审查方式：</strong> 仅通过 USB 连接的本机 adb，未 root，未安装任何应用到手机</p>
+<hr>
+<h2>0. 适用范围声明</h2>
+<p>本报告的全部结论，<strong>只对这一台手机、这一个系统版本、这一段时间有效</strong>。</p>
+<ul>
+<li>设备型号：<code>PFZM10</code></li>
+<li>Android 版本：<code>15</code>（API 35）</li>
+<li>版本号：<code>PFZM10_15.0.0.2002(CN01)</code></li>
+<li>指纹：<code>OPPO/PFZM10/OP5281:15/AP3A.240617.008/S.25c134b-4311e-683b1:user/release-keys</code></li>
+<li>系统编译时间：<code>2026-09-08 16:05:29 CST</code></li>
+<li>本次开机时间：<code>2026-11-05 21:42</code>（adb 采集前约 3 小时 31 分）</li>
+<li>已安装应用总数：410（其中第三方应用 60）</li>
+</ul>
+<p><strong>不适用于：</strong> 同型号的其他机器、其他 ColorOS 版本、OTA 升级后的状态、审查窗口之外的时段的任何结论。软件包内容与云端配置会随更新变化，本报告的静态结论在升级后需重新验证。</p>
+<p><strong>结论的边界（客观限制）：</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>手段</th>
+<th>能看到</th>
+<th>看不到</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>APK 静态分析</td>
+<td>代码里的域名、路径、表结构、权限声明</td>
+<td>运行时的实际请求、加密后的内容、动态拼接的地址</td>
+</tr>
+<tr>
+<td><code>dumpsys netstats</code></td>
+<td>按 uid 的字节数（仅蜂窝网）</td>
+<td>Wi-Fi 流量、共享 uid 内的分应用拆分、目标主机</td>
+</tr>
+<tr>
+<td><code>cmd appops</code></td>
+<td>权限的使用/拒绝记录与时间</td>
+<td>具体调用的参数</td>
+</tr>
+<tr>
+<td><code>dumpsys alarm</code></td>
+<td>已排队的定时任务</td>
+<td>已取消或已执行的定时任务</td>
+</tr>
+<tr>
+<td><code>logcat</code></td>
+<td>近期日志</td>
+<td>无 root 无法读取的 <code>/data/data</code>、已被轮转删除的日志</td>
+</tr>
+</tbody>
+</table></div>
+<p>未 root，因此 <code>/data/data/*</code> 下的 SQLite 队列、缓存、加密密钥均<strong>未读取</strong>。本报告所有"数据去向"的判断来自代码与配置，不代表已观测到实际发出的报文。</p>
+<hr>
+<h2>1. 联通自注册组件 <code>com.mobiletools.systemhelper</code></h2>
+<h3>1.1 身份标识</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>包名</td>
+<td><code>com.mobiletools.systemhelper</code></td>
+</tr>
+<tr>
+<td>uid</td>
+<td><code>10209</code></td>
+</tr>
+<tr>
+<td>APK 路径</td>
+<td><code>/product/priv-app/SystemHelper-oppo-20240717/SystemHelper-oppo-20240717.apk</code></td>
+</tr>
+<tr>
+<td>版本</td>
+<td><code>3.0.1-20240717</code>（versionCode 31，targetSdk 33）</td>
+</tr>
+<tr>
+<td>首次安装</td>
+<td><code>2022-05-09 00:12:32</code></td>
+</tr>
+<tr>
+<td>最后更新</td>
+<td><code>2024-10-22 03:12:28</code></td>
+</tr>
+<tr>
+<td>安装来源</td>
+<td><code>installerPackageName=null</code></td>
+</tr>
+<tr>
+<td>所在分区</td>
+<td><code>/product/priv-app</code>（系统分区，非 root 不可卸载）</td>
+</tr>
+</tbody>
+</table></div>
+<h3>1.2 权限</h3>
+<p><strong>已授予（granted=true）：</strong></p>
+<pre><code>android.permission.INTERNET
+android.permission.FOREGROUND_SERVICE
+android.permission.RECEIVE_BOOT_COMPLETED
+android.permission.READ_PRECISE_PHONE_STATE
+android.permission.READ_PRIVILEGED_PHONE_STATE
+android.permission.PACKAGE_USAGE_STATS
+android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+android.permission.CHANGE_WIFI_STATE
+android.permission.ACCESS_WIFI_STATE
+android.permission.ACCESS_NETWORK_STATE
+android.permission.SCHEDULE_EXACT_ALARM
+android.permission.QUERY_ALL_PACKAGES
+</code></pre>
+<p><strong>定位权限（默认授予，未经用户交互）：</strong></p>
+<pre><code>ACCESS_FINE_LOCATION        granted=true  flags=[GRANTED_BY_DEFAULT]
+ACCESS_COARSE_LOCATION      granted=true  flags=[GRANTED_BY_DEFAULT]
+ACCESS_BACKGROUND_LOCATION  granted=true  flags=[GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+</code></pre>
+<p>注意 <code>RESTRICTION_SYSTEM_EXEMPT</code>：后台定位的系统限制被显式豁免。</p>
+<p><strong>声明但运行时 appops 为 ignore：</strong></p>
+<pre><code>READ_CONTACTS / WRITE_CONTACTS / READ_CALL_LOG / WRITE_CALL_LOG
+READ_SMS / RECEIVE_SMS / SEND_SMS / RECEIVE_MMS
+CAMERA / RECORD_AUDIO / READ_CALENDAR
+</code></pre>
+<p>（<code>cmd appops get com.mobiletools.systemhelper</code> 全部返回 <code>ignore</code>）</p>
+<h3>1.3 组件与触发条件</h3>
+<p><code>dumpsys package</code> 中声明的接收器与服务：</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>组件</th>
+<th>触发</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>control.OnBootReceiver</code></td>
+<td><code>BOOT_COMPLETED</code>、<code>QUICKBOOT_POWERON</code></td>
+</tr>
+<tr>
+<td><code>control.ConnectStateReceiver</code></td>
+<td><code>CONNECTIVITY_CHANGE</code></td>
+</tr>
+<tr>
+<td><code>control.SIMStateReceiver</code></td>
+<td><code>SIM_STATE_CHANGED</code></td>
+</tr>
+<tr>
+<td><code>control.ScheduleRegisterReceiver</code></td>
+<td>定时闹钟</td>
+</tr>
+<tr>
+<td><code>control.AppInfoRegisterReceiver</code></td>
+<td>定时闹钟（应用清单上报）</td>
+</tr>
+<tr>
+<td><code>control.SignalInfoRegisterReceiver</code></td>
+<td>定时闹钟（信号/基站上报）</td>
+</tr>
+<tr>
+<td><code>control.GetSignalInfoReceiver</code></td>
+<td>定时闹钟</td>
+</tr>
+<tr>
+<td><code>service.RegisterHelperService</code></td>
+<td>绑定 <code>com.mobiletools.systemhelper.service.IRegisterHelperService</code></td>
+</tr>
+<tr>
+<td><code>service.RegisterIntentService</code></td>
+<td>IntentService</td>
+</tr>
+<tr>
+<td><code>service.RegisterJobService</code></td>
+<td>JobScheduler</td>
+</tr>
+<tr>
+<td><code>Activity.TestActivity</code></td>
+<td>测试入口</td>
+</tr>
+</tbody>
+</table></div>
+<p><code>dumpsys alarm</code> 中保留的闹钟快照（本次开机前）：</p>
+<pre><code>*walarm*:com.mobiletools.systemhelper/.control.SignalInfoRegisterReceiver
+*walarm*:com.mobiletools.systemhelper/.control.ScheduleRegisterReceiver
+*walarm*:com.mobiletools.systemhelper/.control.AppInfoRegisterReceiver
+*walarm*:com.mobiletools.systemhelper/.control.GetSignalInfoReceiver
+</code></pre>
+<p>即：开机启动 + 网络变化 + SIM 变化 + 三类周期闹钟，均为 <strong>WAKEUP</strong> 类型（可唤醒休眠）。</p>
+<h3>1.4 上报目标</h3>
+<p><strong>代码中仅有的两个 URL（字节级精确匹配）：</strong></p>
+<pre><code>http://dm.wo.com.cn:18080/register
+https://api.map.baidu.com/sdkcs/verify
+</code></pre>
+<ul>
+<li>第一个是中国联通的自注册接口，<strong>明文 HTTP，非标准端口 18080</strong>。</li>
+<li>第二个是百度定位 SDK 的鉴权校验地址，代码中含 <code>com.baidu.android.lbs.API_KEY</code> 相关字符串，以及 <code>LocUploadThreadManager</code>、<code>getBaseStationLatitude</code>、<code>getBaseStationLongitude</code>、<code>openGPS</code>、<code>定位成功/定位失败</code> 等。</li>
+<li>DNS：<code>dm.wo.com.cn</code> → <code>180.97.168.69</code>。</li>
+</ul>
+<h3>1.5 上报内容（代码字段级证据）</h3>
+<p><strong>手机身份字段：</strong> <code>IMEI</code>、<code>IMSI</code>、<code>ICCID</code>（含 <code>IMEI1/IMEI2</code>、<code>ICCID1/ICCID2</code>、<code>IMSI1/IMSI2</code> 双卡槽）</p>
+<p><strong>基站身份字段</strong>（错误日志 <code>imei/mnc/imsi/tac/cid/pci/networkType/mncch is null!</code> 反推）：
+<code>mnc</code>、<code>mcc</code>、<code>tac</code>、<code>cid</code>、<code>pci</code>、<code>networkType</code>、<code>mncch</code>、<code>signalStrength</code></p>
+<p><strong>位置字段：</strong> <code>LATITUDE</code>、<code>LONGITUDE</code>、<code>Latitude</code>、<code>Longitude</code></p>
+<p><strong>应用清单字段：</strong> <code>AppInfo</code>、<code>getInstalledApplications</code>、<code>getPackageName</code>、<code>packageName</code>、<code>isInstalled</code>、<code>versionName</code></p>
+<p><strong>设备字段：</strong> <code>model</code>、<code>OSVersion</code></p>
+<p><strong>上报类型：</strong> 日志中出现 <code>type A-appinfo</code> 与 <code>type R-appinfo</code> 两种，分别受配置项 <code>appInfoInterval</code> / <code>appInfoInterval2</code> 控制。</p>
+<p><strong>加密：</strong> 字符串 <code>AES加密密文</code>、<code>RSA加密密文</code>、<code>AES/CBC/PKCS5PADDING</code>、<code>RSAHelper</code>、MIME 类型 <code>application/encrypted-json</code>。<strong>即上报体在传输前已经过 AES/RSA 加密，报文内容无法从网络层还原。</strong></p>
+<h3>1.6 本地存储结构</h3>
+<p><code>classes*.dex</code> 中的 SQLite DDL：</p>
+<pre><code class="language-sql">CREATE TABLE IF NOT EXISTS dmregister (ID integer primary key autoincrement, jsonString text);
+CREATE TABLE IF NOT EXISTS signal     (ID integer primary key autoincrement, jsonString text);
+</code></pre>
+<p>即存在<strong>本地积压队列</strong>：上报失败或未到时机时先落库，之后再补发。</p>
+<p>另有百度定位 SDK 自带的表：</p>
+<pre><code class="language-sql">CREATE TABLE IF NOT EXISTS AP (id LONG PRIMARY KEY, x DOUBLE, y DOUBLE, r INTEGER, cl DOUBLE, timestamp INTEGER, frequency INTEGER DEFAULT 0);
+CREATE TABLE IF NOT EXISTS CL (id LONG PRIMARY KEY, x DOUBLE, y DOUBLE, r INTEGER, cl DOUBLE, timestamp INTEGER, frequency INTEGER DEFAULT 0);
+CREATE TABLE IF NOT EXISTS BLACK (name VARCHAR(100) PRIMARY KEY);
+</code></pre>
+<h3>1.7 审查窗口内的实际行为</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>观测项</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cmd appops get ... FINE_LOCATION</code></td>
+<td><code>allow; time=+3h31m ago</code> → 最近一次定位访问 <strong>2026-11-05 21:48:50</strong>（开机后约 6 分钟）</td>
+</tr>
+<tr>
+<td><code>rejectTime</code></td>
+<td><code>+47d</code> → 约 47 天前有过一次定位请求被拒</td>
+</tr>
+<tr>
+<td><code>dumpsys usagestats</code></td>
+<td><code>appLaunchCount=0</code>，<code>lastTimeUsed=1970-01-01</code> → 从未以前台界面启动过</td>
+</tr>
+<tr>
+<td><code>ps -A</code></td>
+<td>审查时无该包进程</td>
+</tr>
+<tr>
+<td><code>dumpsys alarm</code> 当前待触发</td>
+<td>0 条</td>
+</tr>
+<tr>
+<td>已注册广播接收器</td>
+<td>0 条</td>
+</tr>
+<tr>
+<td>运行中的服务</td>
+<td>0 个</td>
+</tr>
+<tr>
+<td>蜂窝流量（20:00–22:00 桶）</td>
+<td>接收 1,492 B / 发送 3,980 B</td>
+</tr>
+<tr>
+<td><code>logcat</code></td>
+<td>仅 <code>2026-11-06 00:41:40</code> 的后台 dexopt 记录，无进程启动事件（日志已轮转）</td>
+</tr>
+</tbody>
+</table></div>
+<h3>1.8 当前包状态</h3>
+<pre><code>User 0: installed=true hidden=false suspended=true stopped=true enabled=3
+Suspend params: suspendingPackage=&lt;0&gt;com.android.shell
+</code></pre>
+<ul>
+<li><code>enabled=3</code> = <code>COMPONENT_ENABLED_STATE_DISABLED_USER</code></li>
+<li>出现在 <code>pm list packages -d</code> 的禁用列表中</li>
+<li><code>suspended=true</code>，记录的执行方为 <code>com.android.shell</code>（即通过 adb 施加）</li>
+<li>该状态在重启后是否保持，本次开机周期内尚未观测（本周期内未再重启）</li>
+</ul>
+<h3>1.9 先前测试记录（本次窗口之外）</h3>
+<p>在此前的同一台设备测试中：在系统设置界面停用该应用后重启，服务被重新拉起。该记录的日期在 2026-11-04 至 2026-11-05 之间，具体时间未留存日志。</p>
+<hr>
+<h2>2. 全机检索结果</h2>
+<h3>2.1 域名检索</h3>
+<p>对全部 410 个已安装 APK 的 <code>classes*.dex</code> 与 <code>resources.arsc</code> 解压后逐字节检索（不对压缩包直接 grep，避免漏检）：</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>域名</th>
+<th>结果</th>
+<th>命中包</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dm.wo.com.cn</code></td>
+<td><strong>1 个包</strong></td>
+<td><code>com.mobiletools.systemhelper</code></td>
+</tr>
+<tr>
+<td><code>cloud.risk.envparam.net</code></td>
+<td><strong>0 个包</strong>，DNS 返回 NXDOMAIN</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>safecollector.com</code></td>
+<td><strong>0 个包</strong>；该域名的 A 记录为 37.9.175.18，NS 为 <code>ns1/ns2.loopiagroup.com</code>，属停放域名，443 端口无 TLS 响应</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>方法说明：APK 是 zip 压缩包，直接对 <code>.apk</code> 文件执行 <code>grep</code> 会因压缩而漏检。对 SystemHelper 的 APK 直接 <code>grep -c dm.wo.com.cn</code> 返回 0，而 <code>unzip -p "$apk" "classes*.dex" | grep</code> 可命中——本报告全部域名结论均采用后者。</p>
+<p><code>com.heytap.mcs</code>（OPPO 推送服务）的 dex 中含若干其他厂商的连通性探测地址（<code>connectivitycheck.platform.hicloud.com</code>、<code>connectivitycheck.platform.hihonorcloud.com</code>、<code>wifi.vivo.com.cn</code> 等），位于 <strong>captive portal（门户探测）列表</strong>上下文中，用于判断网络是否可用，不是数据回传地址。该判断与 <code>settings get global captive_portal_*</code> 返回 <code>null</code> 相符。</p>
+<h3>2.2 录屏与画面采集</h3>
+<p><code>dumpsys media_projection</code> 返回 <code>null</code>，当前<strong>无活动的屏幕投射（录屏）会话</strong>。<code>CAPTURE_VIDEO_OUTPUT</code> 的唯一持有者为 <code>com.android.shell</code>（见第 3 节）。</p>
+<h3>2.3 本地数据库</h3>
+<p>手机管家（<code>com.coloros.phonemanager</code>）的 DDL 中有</p>
+<pre><code class="language-sql">CREATE TABLE IF NOT EXISTS `fraud_detect_record_table` (
+  `_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  `is_synthetic` INTEGER NOT NULL,
+  `is_voip` INTEGER NOT NULL,
+  `code` INTEGER NOT NULL,
+  `phone_num` TEXT,
+  `pack_name` TEXT,
+  `is_ai_voice` INTEGER NOT NULL,
+  `fraud_risk_type` INTEGER NOT NULL,
+  `time` INTEGER NOT NULL
+);
+</code></pre>
+<p>同库另有 <code>ignoredRecord</code>、<code>questionnaires</code> 表。该数据库位于 <code>/data/data/com.coloros.phonemanager/</code>，无 root 无法读取。</p>
+<hr>
+<h2>3. 采集类权限的实际持有者</h2>
+<p>对 410 个包逐一执行 <code>dumpsys package | grep '&lt;权限&gt;: granted=true'</code>，去重后的结果：</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>权限</th>
+<th>持有包数</th>
+<th>持有者</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CAPTURE_VIDEO_OUTPUT</code></td>
+<td><strong>1</strong></td>
+<td><code>com.android.shell</code></td>
+</tr>
+<tr>
+<td><code>CAPTURE_AUDIO_OUTPUT</code></td>
+<td>22</td>
+<td><code>com.android.incallui</code>、<code>com.android.phone</code>、<code>com.android.systemui</code>、<code>com.android.shell</code>、<code>com.android.vendors.bridge.softsim</code>、<code>com.mediatek.ims</code>、<code>com.mediatek.telephony</code>、<code>com.heytap.speechassist</code>、<code>com.oplus.cast</code>、<code>com.oplus.nhs</code>、<code>com.oplus.vdc</code>、<code>com.coloros.translate.engine</code>、<code>com.google.android.gms/gsf</code>、<code>com.microsoft.deviceintegrationservice</code>、<code>vendor.mediatek.iwlanservice</code> 等</td>
+</tr>
+<tr>
+<td><code>MANAGE_MEDIA_PROJECTION</code></td>
+<td>18</td>
+<td><code>com.android.incallui</code>、<code>com.android.systemui</code>、<code>com.android.phone</code>、<code>com.android.stk</code>、<code>com.android.vendors.bridge.softsim</code>、<code>com.oplus.linker</code>、<code>com.oplus.deepthinker</code>、<code>com.oplus.ocar</code>、<code>com.oplus.nhs</code>、<code>com.microsoftsdk.crossdeviceservicebroker</code> 等</td>
+</tr>
+<tr>
+<td><code>ACCESS_SURFACE_FLINGER</code></td>
+<td>14</td>
+<td><code>com.android.incallui</code>、<code>com.android.systemui</code>、<code>com.android.phone</code>、<code>com.android.shell</code>、<code>com.android.vendors.bridge.softsim</code>、<code>com.oplus.beaconlink</code> 等</td>
+</tr>
+<tr>
+<td><code>READ_FRAME_BUFFER</code></td>
+<td>57</td>
+<td>含 <code>systemui</code>、<code>launcher</code>、<code>settings</code>、<code>pscanvas</code>、<code>atlas</code>、<code>obrain</code>、<code>logkit</code>、<code>trafficmonitor</code>、<code>healthservice</code>、<code>heytap.mcs</code> 等</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>当前无活动的 MediaProjection 会话</strong>（<code>dumpsys media_projection</code> 返回 <code>null</code>）。</p>
+<hr>
+<h2>4. OPPO 侧遥测/风控端点</h2>
+<h3>4.1 归属：三个域名族，三家持证主体</h3>
+<p>同一批端点分属三个域名族，TLS 证书主体不同：</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>域名族</th>
+<th>证书 O 字段</th>
+<th>CN</th>
+<th>系统内承载</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>*.allawntech.com</code></td>
+<td>OPPO广东移动通信有限公司</td>
+<td><code>www.oppo.com</code></td>
+<td>推理（Odin）、运营内容</td>
+</tr>
+<tr>
+<td><code>*.wanyol.com</code></td>
+<td>广东欢太科技有限公司</td>
+<td><code>www.wanyol.com</code></td>
+<td>推理备用通道、部署、测试环境</td>
+</tr>
+<tr>
+<td><code>*.heytapmobi.com</code> / <code>*.heytap.com</code> / <code>*.heytapdownload.com</code></td>
+<td>广东欢太科技有限公司（<code>heytapdownload.com</code> 为「深圳市欢太科技有限公司」，CN <code>nearme.com.cn</code>）</td>
+<td><code>www.heytap.com</code> / <code>*.heytapmobi.com</code></td>
+<td>统计、风控、验证码、反馈、文档</td>
+</tr>
+</tbody>
+</table></div>
+<p>端点不是"每个包各自打各自的域名"，而是<strong>若干公共 SDK 被大量系统应用打包</strong>，同一域名因此出现在几十个包里。按"域名 → 包"列表无法区分这一点，故下面按 SDK 分组。</p>
+<h3>4.2 端点清单（按实际性质分组）</h3>
+<p>"原列表"列指该主机是否在用户先前给出的 15 个域名中。</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>组</th>
+<th>端点</th>
+<th>命中包数</th>
+<th>代码中的形态</th>
+<th>原列表</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A 推理上报</strong></td>
+<td><code>odin-inference-cn.allawntech.com</code></td>
+<td>3</td>
+<td><code>phonemanager</code> 有 3 条完整路径；<code>speechassist</code>、<code>dmp</code> 仅根路径</td>
+<td>—</td>
+</tr>
+<tr>
+<td></td>
+<td><code>odin-deployment-cn.wanyol.com</code></td>
+<td>3</td>
+<td><code>phonemanager</code> 2 条完整路径；<code>dmp</code> 为 <code>/crypt/</code>；<code>deepthinker</code> 仅根路径</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>B 设备风控</strong></td>
+<td><code>omes-sec-stdsrp-cn.heytapmobi.com</code></td>
+<td>1</td>
+<td>6 条完整路径（<code>std-srp/*</code>、<code>std-passkey/login_chk</code>）</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><strong>C 密钥/票据</strong></td>
+<td><code>datasec-kmsex-cn.heytapmobi.com</code></td>
+<td>10</td>
+<td><code>/v1/</code> 及 4 条 <code>getkms*</code> / <code>getserviceticket</code> 路径</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><strong>D 统计埋点</strong></td>
+<td><code>cubefs-norths3-cn.heytapmobi.com</code></td>
+<td>1</td>
+<td>仅根路径；S3 兼容对象存储</td>
+<td>—</td>
+</tr>
+<tr>
+<td></td>
+<td><code>mdp-usertrace-cn.heytapmobi.com</code></td>
+<td>9</td>
+<td>仅根路径，9 个包内均无路径</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><strong>E OCR</strong></td>
+<td><code>aitool-cuiocr-cn.heytapmobi.com</code></td>
+<td>6</td>
+<td><code>nps/cui/api/v1/ocr_file</code>（5 个包同一条）</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><strong>F 意图</strong></td>
+<td><code>sense-intent-cn-01.heytapmobi.com</code></td>
+<td>3</td>
+<td>仅根路径</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><strong>G 运营内容</strong></td>
+<td><code>traffic-operation-cn.allawntech.com</code></td>
+<td>21</td>
+<td>仅 <code>ocrscanner</code> 一条路径 <code>operate_service/v1/prod/get_content</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>H 服务转发</strong></td>
+<td><code>oms-forward-cn.heytapmobi.com</code></td>
+<td>13</td>
+<td><code>/api</code>、<code>/api/forward/service-forward/appstore-download-token</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>I 验证码</strong></td>
+<td><code>captcha-sec.heytapmobi.com</code></td>
+<td>4</td>
+<td><code>dx-captcha/index.js</code>、<code>libs/greenseer.js</code>、<code>udid/m1</code> 等静态资源</td>
+<td>✓</td>
+</tr>
+<tr>
+<td></td>
+<td><code>captcha-uc.heytapmobi.com</code></td>
+<td>6</td>
+<td><code>/api/captcha/v1.0/captcha-page</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>J 安全校验</strong></td>
+<td><code>virusinfo-sec.heytapmobi.com</code></td>
+<td>4</td>
+<td><code>viapi/v1/url/check</code>（<code>ocrscanner</code>、<code>camera</code>）</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><strong>K 测速</strong></td>
+<td><code>security-speed.heytapdownload.com</code></td>
+<td>1</td>
+<td>仅根路径；响应头暴露 S3 风格 bucket <code>/speed-test-cn-s1</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>L 用户反馈</strong></td>
+<td><code>rest-cn-feedback.heytapmobi.com</code></td>
+<td>49</td>
+<td><code>feedback-app/*</code> 5 条，含 <code>upload-feedback</code>、<code>putobjectapp</code></td>
+<td>✓</td>
+</tr>
+<tr>
+<td><strong>M URL 白名单</strong></td>
+<td><code>fraud-feedback-cn.allawntech.com</code></td>
+<td>1</td>
+<td>仅裸主机名，位于 <code>resources.arsc</code> 的白名单条目；<code>classes*.dex</code> 中无该主机路径</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><strong>N 页面跳转</strong></td>
+<td><code>sport.health.heytapmobi.com</code></td>
+<td>2</td>
+<td>1 条 <code>/h5/watch-scancode-connect/index.html</code></td>
+<td>✓</td>
+</tr>
+<tr>
+<td><strong>O 协议文档</strong></td>
+<td><code>muc.heytap.com</code></td>
+<td>25</td>
+<td>41 条 URL 全部为 <code>/document/</code>、<code>/agreement/</code> 静态 HTML</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><strong>P 问卷分发</strong></td>
+<td><code>wj.heytap.com</code></td>
+<td>3</td>
+<td><code>/r/&lt;8位ID&gt;</code> 10 条</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><strong>Q 非 HTTP</strong></td>
+<td><code>carlink.heytap.com</code></td>
+<td>4</td>
+<td>8 条全为 <code>card://</code> URI scheme，非 HTTP 主机</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><strong>不存在</strong></td>
+<td><code>cloud.risk.envparam.net</code></td>
+<td>0</td>
+<td>NXDOMAIN</td>
+<td>✓</td>
+</tr>
+<tr>
+<td></td>
+<td><code>safecollector.com</code></td>
+<td>0</td>
+<td>停放域名，443 无 TLS</td>
+<td>✓</td>
+</tr>
+</tbody>
+</table></div>
+<p>即：15 个域名中，<strong>A–L 中属于原列表的 9 个是真实存在的网络端点</strong>；<code>muc</code>、<code>wj</code>、<code>sport.health</code> 是静态页面或问卷站，<code>carlink</code> 是 URI scheme，<code>fraud-feedback</code> 只出现在 ARSC 白名单里，两个域名不存在。</p>
+<h3>4.3 各组代码级依据</h3>
+<p><strong>A 组 · 推理上报</strong></p>
+<p><code>com.coloros.phonemanager</code>（uid 10156，17.7.10）内的 <code>com/oplus/phonemanager/aivoicecalldetect/</code> 包（含 <code>antifraudhome/SecurityHomeRepository</code>、<code>AiCapabilityStateObserver</code> 等）：</p>
+<pre><code>https://odin-inference-cn.allawntech.com/speechAntiFraud/infer
+https://odin-inference-cn.allawntech.com/speechSynthDetect/infer
+https://odin-inference-cn.allawntech.com/wifiPhotos/infer
+https://odin-deployment-cn.wanyol.com/speechAntiFraud/infer
+https://odin-deployment-cn.wanyol.com/wifiPhotos/infer
+</code></pre>
+<p>同 dex 中另有调试目录字符串 <code>/sdcard/ai_voice_detect_debug/</code>、<code>/sdcard/ai_voice_detect_synthetic_debug/</code>、<code>/recordings/</code>，以及 <code>/v1/feedback/false-positive</code>、<code>/v1/feedback/file/public-key</code>、<code>/v1/feedback/file/upload</code>、密钥别名 <code>fraud-feedback-file-ecdh</code>。</p>
+<p><code>speechAntiFraud</code> / <code>speechSynthDetect</code> / <code>wifiPhotos</code> 三个路径在采集时均返回：</p>
+<pre><code>{&quot;code&quot;:3000404,&quot;message&quot;:&quot;请求头缺失&quot;}
+</code></pre>
+<p>即路径存在、需要请求头鉴权。<code>odin-deployment-cn.wanyol.com/crypt/</code> 同一时刻返回 <code>502 backend connect timeout</code>。</p>
+<p><strong>B 组 · 设备风控（Osense SRP）</strong></p>
+<p><code>com.heytap.htms</code>（uid 10148，2.3.1_e02f13c_261010_btIn-shop_dom）：</p>
+<pre><code>/v1/std-srp/async_report_data
+/v1/std-srp/periodic_report_data
+/v1/std-srp/periodic_report_device_data
+/v1/std-srp/raw_report_data
+/v1/std-srp/request_biz_token
+/v1/std-srp/turing_upload_data
+/v1/std-passkey/login_chk
+</code></pre>
+<p>同 APK 含 <code>com/oplus/omes/srp/util/wb/</code>（<code>CipherPackage</code>、<code>CipherUtil</code>、<code>StringUtil</code>）、<code>com/oplus/osense/OsenseResEventClient</code>、<code>com/tencent/turingfd/sdk/tianyu</code>（腾讯图灵盾），以及 <code>getVmApplist</code>、<code>hasSandBoxInfo</code>、<code>hookRiskNum</code>、<code>houseIdentifier</code>、<code>asyncPeriodicGather</code> 等标识符。</p>
+<p><strong>C / D 组 · 统计 SDK（DCS）</strong></p>
+<p><code>com.oplus.statistics.rom</code>（uid 10092，5.9.17.01）的完整 URL 只有：</p>
+<pre><code>https://datasec-kmsex-cn.heytapmobi.com/v1/
+https://cubefs-norths3-cn.heytapmobi.com
+</code></pre>
+<p>类名含 <code>CubeFsStorage</code> / <code>CubeFsUpload</code> / <code>CubeFsDownload</code>、<code>AmazonS3 putObject</code>、<code>Bucket</code>，<code>cubefs-norths3-cn.heytapmobi.com</code> 返回 <code>403 InvalidAccessKeyId</code> —— 是 S3 兼容对象存储，用于放文件而非收上报。</p>
+<p>真正的上报地址<strong>不在静态字符串里</strong>：APK 内有 SQLite 表</p>
+<pre><code class="language-sql">CREATE TABLE IF NOT EXISTS dynamic_url (
+  common_appid INTEGER PRIMARY KEY, data_type INTEGER NOT NULL DEFAULT 0, dynamic_url Text);
+</code></pre>
+<p>并有 <code>getDynamicUrlTypeList</code>、<code>uploadHost=[</code>、<code>BziuploadHost =</code> 等运行时拼装逻辑。同库还有 <code>app_list_info</code>、<code>preinstall_applist</code>、<code>uninstall</code>、<code>page_visit_info</code>、<code>dau_info</code>、<code>common_info</code>、<code>period_data_info</code> 等表，字段包括 <code>appPackage</code>、<code>otaVersion</code>、<code>is_new_device</code>、<code>is_first_time_report</code>、<code>factory_version</code>。</p>
+<p>另有被字符串截断的 <code>http://apisnd.heytap</code>、<code>https://api-snake.</code>，不完整，无法确定主机名。</p>
+<p><strong>G 组 · 运营内容</strong></p>
+<p><code>traffic-operation-cn.allawntech.com</code> 出现在 21 个包，但只有 <code>com.coloros.ocrscanner</code> 带路径：</p>
+<pre><code>https://traffic-operation-cn.allawntech.com/operate_service/v1/prod/get_content
+</code></pre>
+<p>该路径返回 <code>{"code":100004,"message":"必要参数不能为空！"}</code>。其余 20 个包只含根路径 <code>https://traffic-operation-cn.allawntech.com/</code>。</p>
+<p><strong>E 组 · OCR</strong></p>
+<p><code>aitool-cuiocr-cn.heytapmobi.com/nps/cui/api/v1/ocr_file</code>，5 个包共用（<code>colordirectservice</code>、<code>directui</code>、<code>gallery3d</code>、<code>ocrscanner</code>、<code>phonemanager</code>）。GET 请求返回：</p>
+<pre><code>405 — Method Not Allowed / Method GET not allowed for URL /cui/api/v1/ocr_file
+</code></pre>
+<p>即只接受上传，不接受查询。</p>
+<p><strong>L 组 · 用户反馈</strong></p>
+<p><code>rest-cn-feedback.heytapmobi.com</code> 的 5 条路径：</p>
+<pre><code>/feedback-app/api-new/feedback/fms/upload-feedback
+/feedback-app/ocs/putobjectapp
+/feedback-app/faqcateType/checkFaqCateAndHotFaq
+/feedback-app/feedback/queryNoReadCountNew
+/feedback-app/ocs/putobjectapp
+</code></pre>
+<p><code>/feedback-app/ocs/putobjectapp</code> 返回 <code>{"msg":"失败","status":"0001","subCode":10001,"subMsg":"未知异常","success":false}</code>，为活跃服务。</p>
+<p><strong>K 组 · 测速</strong></p>
+<p><code>security-speed.heytapdownload.com</code> 仅被 <code>phonemanager</code> 引用，对应类为 <code>com/oplus/phonemanager/networkdetect/speed/DownloadSpeedTest</code>（<code>networkdetect/repository/NetworkDiagnosisRepositoryImpl</code>）。访问返回：</p>
+<pre><code>400 MissingSecurityElement ... &lt;Resource&gt;/speed-test-cn-s1&lt;/Resource&gt;
+</code></pre>
+<p>即下载测速用的对象存储 bucket，不是上报接口。</p>
+<p><strong>实测响应（含 N / O / P / Q 等非上报类主机）</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>主机</th>
+<th>响应</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>muc.heytap.com</code></td>
+<td>静态文档页（<code>/document/heytap/privacyPolicy/...</code>、<code>/agreement/...</code>）</td>
+</tr>
+<tr>
+<td><code>wj.heytap.com/r/1prTMzN3</code></td>
+<td>HTML，标题「通知使用体验满意度调研」</td>
+</tr>
+<tr>
+<td><code>sport.health.heytapmobi.com/h5/watch-scancode-connect/index.html</code></td>
+<td>HTML，标题「OPPO 健…」</td>
+</tr>
+<tr>
+<td><code>fraud-feedback-cn.allawntech.com/</code></td>
+<td><code>404 path location is not configured</code></td>
+</tr>
+<tr>
+<td><code>carlink.heytap.com</code></td>
+<td>NXDOMAIN；代码中全部为 <code>card://carlink.heytap.com/control?operation=...</code> 形式</td>
+</tr>
+<tr>
+<td><code>omes-sec-stdsrp-cn.heytapmobi.com/</code></td>
+<td><code>404 path location is not configured</code></td>
+</tr>
+<tr>
+<td><code>datasec-kmsex-cn.heytapmobi.com/v1/</code></td>
+<td><code>200</code>，返回 <code>{"IP":"10.32.124.106","NumCPU":64,"NumGoroutine":1486}</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3>4.4 DNS 与 TLS 证书主体</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>主机</th>
+<th>A 记录</th>
+<th>证书 O</th>
+<th>证书 CN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fraud-feedback-cn.allawntech.com</td>
+<td>14.29.106.224</td>
+<td>OPPO广东移动通信有限公司</td>
+<td>www.oppo.com</td>
+</tr>
+<tr>
+<td>odin-inference-cn.allawntech.com</td>
+<td>106.3.16.189</td>
+<td>OPPO广东移动通信有限公司</td>
+<td>www.oppo.com</td>
+</tr>
+<tr>
+<td>traffic-operation-cn.allawntech.com</td>
+<td>106.39.205.81</td>
+<td>OPPO广东移动通信有限公司</td>
+<td>www.oppo.com</td>
+</tr>
+<tr>
+<td>odin-deployment-cn.wanyol.com</td>
+<td>14.17.89.159</td>
+<td>广东欢太科技有限公司</td>
+<td>www.wanyol.com</td>
+</tr>
+<tr>
+<td>omes-sec-stdsrp-cn.heytapmobi.com</td>
+<td>119.147.175.246</td>
+<td>广东欢太科技有限公司</td>
+<td>www.heytap.com</td>
+</tr>
+<tr>
+<td>datasec-kmsex-cn.heytapmobi.com</td>
+<td>119.147.175.139</td>
+<td>广东欢太科技有限公司</td>
+<td>www.heytap.com</td>
+</tr>
+<tr>
+<td>virusinfo-sec.heytapmobi.com</td>
+<td>106.39.205.196</td>
+<td>广东欢太科技有限公司</td>
+<td>www.heytap.com</td>
+</tr>
+<tr>
+<td>security-speed.heytapdownload.com</td>
+<td>125.77.162.172</td>
+<td>深圳市欢太科技有限公司</td>
+<td>nearme.com.cn</td>
+</tr>
+<tr>
+<td>captcha-sec.heytapmobi.com</td>
+<td>119.147.175.29</td>
+<td>广东欢太科技有限公司</td>
+<td>www.heytap.com</td>
+</tr>
+<tr>
+<td>captcha-uc.heytapmobi.com</td>
+<td>106.3.18.68</td>
+<td>广东欢太科技有限公司</td>
+<td>www.heytap.com</td>
+</tr>
+<tr>
+<td>oms-forward-cn.heytapmobi.com</td>
+<td>59.37.130.5</td>
+<td>广东欢太科技有限公司</td>
+<td>www.heytap.com</td>
+</tr>
+<tr>
+<td>mdp-usertrace-cn.heytapmobi.com</td>
+<td>119.147.98.71</td>
+<td>广东欢太科技有限公司</td>
+<td>*.heytapmobi.com</td>
+</tr>
+<tr>
+<td>aitool-cuiocr-cn.heytapmobi.com</td>
+<td>119.147.98.66</td>
+<td>广东欢太科技有限公司</td>
+<td>*.heytapmobi.com</td>
+</tr>
+<tr>
+<td>sense-intent-cn-01.heytapmobi.com</td>
+<td>106.120.154.125</td>
+<td>广东欢太科技有限公司</td>
+<td>www.heytap.com</td>
+</tr>
+<tr>
+<td>rest-cn-feedback.heytapmobi.com</td>
+<td>119.147.175.124</td>
+<td>广东欢太科技有限公司</td>
+<td>www.heytap.com</td>
+</tr>
+<tr>
+<td>sport.health.heytapmobi.com</td>
+<td>106.120.154.69</td>
+<td>广东欢太科技有限公司</td>
+<td>www.heytap.com</td>
+</tr>
+<tr>
+<td>cubefs-norths3-cn.heytapmobi.com</td>
+<td>49.7.118.32</td>
+<td>广东欢太科技有限公司</td>
+<td>*.heytapmobi.com</td>
+</tr>
+<tr>
+<td>muc.heytap.com</td>
+<td>36.110.185.46</td>
+<td>广东欢太科技有限公司</td>
+<td>www.heytap.com</td>
+</tr>
+<tr>
+<td>wj.heytap.com</td>
+<td>49.7.118.132</td>
+<td>广东欢太科技有限公司</td>
+<td>www.heytap.com</td>
+</tr>
+<tr>
+<td>carlink.heytap.com</td>
+<td><strong>NXDOMAIN</strong></td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>dm.wo.com.cn</td>
+<td>180.97.168.69</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>cloud.risk.envparam.net</td>
+<td><strong>NXDOMAIN</strong></td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>safecollector.com</td>
+<td>37.9.175.18（停放域名，NS <code>ns1/ns2.loopiagroup.com</code>，443 无 TLS）</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<h3>4.5 敏感权限的默认授予状态</h3>
+<p><strong><code>com.heytap.htms</code>（uid 10148）</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>权限</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ACCESS_FINE_LOCATION</code></td>
+<td>granted=true，<code>GRANTED_BY_DEFAULT</code></td>
+</tr>
+<tr>
+<td><code>ACCESS_COARSE_LOCATION</code></td>
+<td>granted=true，<code>GRANTED_BY_DEFAULT</code></td>
+</tr>
+<tr>
+<td><code>ACCESS_BACKGROUND_LOCATION</code></td>
+<td>granted=true，<code>GRANTED_BY_DEFAULT</code> + 三类豁免</td>
+</tr>
+<tr>
+<td><code>QUERY_ALL_PACKAGES</code></td>
+<td>granted=true</td>
+</tr>
+<tr>
+<td><code>ACCESS_WIFI_STATE</code> / <code>CHANGE_WIFI_STATE</code></td>
+<td>granted=true</td>
+</tr>
+<tr>
+<td><code>POST_NOTIFICATIONS</code></td>
+<td>granted=false</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong><code>com.oplus.statistics.rom</code>（uid 10092）</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>权限</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ACCESS_FINE_LOCATION</code> / <code>COARSE</code></td>
+<td>granted=true，<code>GRANTED_BY_DEFAULT</code></td>
+</tr>
+<tr>
+<td><code>ACCESS_BACKGROUND_LOCATION</code></td>
+<td>granted=true，<code>GRANTED_BY_DEFAULT</code></td>
+</tr>
+<tr>
+<td><code>QUERY_ALL_PACKAGES</code></td>
+<td>granted=true</td>
+</tr>
+<tr>
+<td><code>READ_PRIVILEGED_PHONE_STATE</code></td>
+<td>granted=true</td>
+</tr>
+<tr>
+<td><code>com.oplus.permission.safe.PHONE</code> / <code>com.oppo.permission.safe.PHONE</code></td>
+<td>granted=true</td>
+</tr>
+</tbody>
+</table></div>
+<p>同 APK 含 <code>DeviceIdContentProvider</code>、<code>DeviceIdUtil</code>、<code>DuidRatioUtils</code>、<code>AppIdDictionary*</code>、<code>EVENT_ACTIVITY_ENTER/EXIT</code> 等类。</p>
+<p><strong><code>com.heytap.mcs</code>（uid 1000）</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>权限</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ACCESS_FINE_LOCATION</code> / <code>COARSE</code> / <code>BACKGROUND_LOCATION</code></td>
+<td>granted=true，<code>SYSTEM_FIXED</code> + <code>GRANTED_BY_DEFAULT</code></td>
+</tr>
+<tr>
+<td><code>READ_WIFI_CREDENTIAL</code>、<code>LOCATION_BYPASS</code>、<code>LOCATION_HARDWARE</code></td>
+<td>granted=true</td>
+</tr>
+<tr>
+<td><code>QUERY_ALL_PACKAGES</code></td>
+<td>granted=true</td>
+</tr>
+</tbody>
+</table></div>
+<p>由于运行在 uid 1000（system），其流量与 <code>system_server</code> 合并统计，无法单独核算。</p>
+<p><strong><code>com.coloros.phonemanager</code>（uid 10156）appops 全部为 <code>ignore</code>：</strong></p>
+<pre><code>READ_CALL_LOG / READ_SMS / RECORD_AUDIO / CAMERA
+FINE_LOCATION / COARSE_LOCATION / READ_CONTACTS
+READ_PHONE_STATE / GET_ACCOUNTS / READ_EXTERNAL_STORAGE
+</code></pre>
+<p>同一 APK 中的界面文案（资源字符串）：</p>
+<pre><code>本应用需要收集您的通话记录
+AI通话防诈功能仅保留识别到有风险的通话记录
+诈骗举报中读取并让用户上报诈骗通话记录
+从本机通话记录中选择被举报号码
+设置-隐私与安全-全部权限-通话记录
+</code></pre>
+<p>即：该功能的读取权限当前处于关闭状态，上述文案描述的能力在本机配置下不成立。</p>
+<p><strong><code>com.coloros.colordirectservice</code>（uid 10134）</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>权限</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>READ_FRAME_BUFFER</code></td>
+<td>声明，<strong>granted=false</strong></td>
+</tr>
+<tr>
+<td><code>MANAGE_EXTERNAL_STORAGE</code></td>
+<td>granted=true</td>
+</tr>
+<tr>
+<td><code>QUERY_ALL_PACKAGES</code></td>
+<td>granted=true</td>
+</tr>
+<tr>
+<td><code>CAPTURE_VIDEO_OUTPUT</code> / <code>CAPTURE_AUDIO_OUTPUT</code> / <code>MANAGE_MEDIA_PROJECTION</code> / <code>ACCESS_SURFACE_FLINGER</code></td>
+<td><strong>未声明</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h2>5. 实际流量（蜂窝网，<code>dumpsys netstats detail</code>）</h2>
+<p>统计方式：<code>bucketDuration=7200</code>（2 小时一桶），本地时间。<strong>仅含蜂窝网（ccmni2），不含 Wi-Fi；共享 uid 会合并多个包的流量。</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>uid</th>
+<th>包</th>
+<th>11-05 20:00</th>
+<th>11-05 22:00</th>
+<th>11-06 00:00</th>
+<th>11-06 02:00（未满）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10092</td>
+<td><code>com.oplus.statistics.rom</code></td>
+<td>17,597 / 32,928</td>
+<td>153,105 / <strong>247,859</strong></td>
+<td>203,461 / <strong>358,312</strong></td>
+<td>23,222 / 47,366</td>
+</tr>
+<tr>
+<td>10148</td>
+<td><code>com.heytap.htms</code></td>
+<td>35,381 / 23,885</td>
+<td>102,857 / 18,826</td>
+<td>45,295 / 39,553</td>
+<td>4,940 / 3,264</td>
+</tr>
+<tr>
+<td>10156</td>
+<td><code>com.coloros.phonemanager</code></td>
+<td>5,418 / 3,203</td>
+<td>26,403 / 11,714</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>10134</td>
+<td><code>com.coloros.colordirectservice</code></td>
+<td>—</td>
+<td>9,213 / 3,493</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>10209</td>
+<td><code>com.mobiletools.systemhelper</code></td>
+<td>1,492 / 3,980</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>10208</td>
+<td><code>com.coloros.sceneservice</code></td>
+<td>4,511 / 2,824</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>1000</td>
+<td><code>com.heytap.mcs</code></td>
+<td>65,968 / 28,272</td>
+<td>41,092 / 23,839</td>
+<td>26,549 / 22,640</td>
+<td>42,519 / 18,163</td>
+</tr>
+</tbody>
+</table></div>
+<p>单元格格式为 <strong>接收 / 发送</strong>（字节）。uid 1000 与 <code>system_server</code> 合并统计，无法拆分到 <code>com.heytap.mcs</code>。</p>
+<p>观测到的特征：</p>
+<ol>
+<li><code>com.oplus.statistics.rom</code> 的上行持续高于下行，22:00、00:00、02:00 三个桶分别在 248 KB、358 KB、47 KB 量级（最后一桶未满）。其 APK 内没有任何完整的上报 URL（只有 KMS 与对象存储两条），上报地址由 <code>dynamic_url</code> 表在运行时下发。<strong>该流量的具体接收方无法从静态分析确定。</strong></li>
+<li><code>com.heytap.htms</code> 的流量以<strong>下行</strong>为主（102,857 B 接收 / 18,826 B 发送），与"周期上报设备数据"的方向相反；其上行绝对量在 3.2–39.5 KB 之间。</li>
+<li><code>com.mobiletools.systemhelper</code> 只在 20:00–22:00 桶有记录（1,492 / 3,980 B）；停用动作发生于 21:48 前后，之后各桶均无记录。</li>
+<li><code>com.coloros.phonemanager</code> 的 appops 敏感项全部为 <code>ignore</code>，其流量为 3–12 KB 级别。</li>
+<li><code>com.oplus.deepthinker</code>、<code>com.oplus.metis</code>、<code>com.oplus.dmp</code>、<code>com.coloros.directui</code>、<code>com.heytap.speechassist</code> 在 <code>dumpsys netstats</code> 中<strong>没有任何记录</strong>（该表只列有流量的 uid），即本次窗口内无蜂窝流量。</li>
+</ol>
+<hr>
+<h2>6. 证据附录（可复现命令）</h2>
+<pre><code class="language-bash"># 设备身份
+adb shell getprop ro.product.model
+adb shell getprop ro.build.fingerprint
+adb shell getprop ro.build.display.id
+
+# 包清单与 uid
+adb shell pm list packages -f
+adb shell pm list packages -U
+
+# 包详情 / 权限 / 启用状态
+adb shell dumpsys package com.mobiletools.systemhelper
+adb shell dumpsys package com.coloros.colordirectservice
+adb shell cmd appops get com.mobiletools.systemhelper
+adb shell pm list packages -d
+
+# 组件与定时任务
+adb shell dumpsys alarm
+adb shell dumpsys activity broadcasts
+adb shell dumpsys activity services com.mobiletools.systemhelper
+
+# 录屏 / 采集权限持有者
+adb shell dumpsys media_projection
+adb shell 'for p in $(pm list packages | sed &quot;s/package://&quot;); do \
+  dumpsys package $p | grep -q &quot;android.permission.CAPTURE_VIDEO_OUTPUT: granted=true&quot; &amp;&amp; echo $p; done'
+
+# 流量
+adb shell dumpsys netstats detail &gt; /tmp/netstats.txt
+
+# APK 内 URL 与串（在设备上解压后检索，避免对压缩包直接 grep）
+adb shell 'APK=$(pm path com.mobiletools.systemhelper | sed &quot;s/package://&quot;); \
+  unzip -p &quot;$APK&quot; &quot;classes*.dex&quot; | strings -n 4 | grep -a -E &quot;https?://&quot;'
+
+# 全机字节级域名检索（注意：pm list packages -f 每个包只给出一条 APK 路径，
+# 对 htms 这类 split 包必须用 pm path 取全部 APK，否则会漏检）
+adb shell 'for pkg in $(pm list packages | sed &quot;s/package://&quot;); do
+  for apk in $(pm path $pkg | sed &quot;s/package://&quot;); do
+    unzip -p &quot;$apk&quot; &quot;classes*.dex&quot; &quot;resources.arsc&quot; 2&gt;/dev/null | grep -aq &quot;dm.wo.com.cn&quot; &amp;&amp; echo &quot;HIT $pkg $apk&quot;
+  done
+done'
+
+# DNS 与证书归属
+getent ahostsv4 &lt;host&gt;
+openssl s_client -connect &lt;host&gt;:443 -servername &lt;host&gt; &lt;/dev/null 2&gt;/dev/null | openssl x509 -noout -subject
+</code></pre>
+<hr>
+<h2>7. 客观事实汇总</h2>
+<ol>
+<li>设备为<strong>非运营商定制机</strong>，同时预置了联通自注册组件 <code>com.mobiletools.systemhelper</code>，位于 <code>/product/priv-app</code>，不可卸载。</li>
+<li>该组件的上报目标是 <code>http://dm.wo.com.cn:18080/register</code>，<strong>明文 HTTP</strong>；上报体为 AES/RSA 加密的 <code>application/encrypted-json</code>。</li>
+<li>该组件默认获得前台+后台精确定位；本次开机后约 6 分钟有一次定位访问记录；<code>appLaunchCount=0</code>。</li>
+<li>本次审查窗口内，该组件已处于 <code>DISABLED_USER</code> + <code>stopped</code> + <code>suspended</code> 状态，无进程、无待触发闹钟、无已注册接收器；蜂窝流量仅出现在停用之前的 20:00–22:00 桶。</li>
+<li>全部 410 个已安装包的 <code>classes*.dex</code> 与 <code>resources.arsc</code> 中，<code>dm.wo.com.cn</code> 仅出现在 <code>com.mobiletools.systemhelper</code>；<code>cloud.risk.envparam.net</code> 与 <code>safecollector.com</code> 均 0 命中。</li>
+<li>手机管家的本地库中有 <code>fraud_detect_record_table</code>（含 <code>phone_num</code>、<code>is_ai_voice</code>、<code>fraud_risk_type</code> 等字段），位于不可读的 <code>/data/data/com.coloros.phonemanager/</code>。</li>
+<li>当前无活动的 MediaProjection 会话；<code>CAPTURE_VIDEO_OUTPUT</code> 唯一持有者为 <code>com.android.shell</code>；<code>com.coloros.colordirectservice</code> 未声明 <code>CAPTURE_*</code> / <code>MANAGE_MEDIA_PROJECTION</code> / <code>ACCESS_SURFACE_FLINGER</code>。</li>
+<li>用户列出的 15 个域名中：9 个是真实网络端点（<code>virusinfo-sec</code>、<code>datasec-kmsex</code>、<code>captcha-sec</code>、<code>omes-sec-stdsrp</code>、<code>mdp-usertrace</code>、<code>aitool-cuiocr</code>、<code>sense-intent</code>、<code>rest-cn-feedback</code>、<code>fraud-feedback</code>）；<code>muc</code>、<code>wj</code>、<code>sport.health</code> 为静态页面或问卷站；<code>carlink</code> 仅为 <code>card://</code> URI scheme 且 DNS 不解析；<code>cloud.risk.envparam.net</code> 与 <code>safecollector.com</code> 不存在。</li>
+<li>证书归属：<code>*.allawntech.com</code> → OPPO广东移动通信有限公司（CN <code>www.oppo.com</code>）；<code>*.heytapmobi.com</code>、<code>*.heytap.com</code>、<code>*.wanyol.com</code> → 广东欢太科技有限公司；<code>security-speed.heytapdownload.com</code> → 深圳市欢太科技有限公司（CN <code>nearme.com.cn</code>）。</li>
+<li>三处与设备数据的直接接触面：手机管家的 Odin 推理端点（<code>speechAntiFraud</code>、<code>speechSynthDetect</code>、<code>wifiPhotos</code>，测试请求返回「请求头缺失」）；HTMS 的 Osense SRP 设备上报（<code>periodic_report_device_data</code> 等 6 条路径）叠加腾讯图灵盾 <code>turing_upload_data</code>；统计 SDK 的上行（最大 358 KB/2h，接收方由 <code>dynamic_url</code> 表运行时下发，静态无法确定）。</li>
+<li>手机管家的通话记录/短信/录音/相机/定位 appops 当前全部为 <code>ignore</code>；HTMS、统计 SDK 的精确定位 appops 为 <code>allow</code>（<code>GRANTED_BY_DEFAULT</code>），最近一次访问分别约在采集前 42 分钟、3 分钟。</li>
+<li><code>com.oplus.deepthinker</code> 的 <code>READ_SMS</code>、<code>READ_CALL_LOG</code> appops 为 <code>allow</code>，最近访问约在采集前 4 小时 48 分；该包内引用 <code>odin-deployment-cn.wanyol.com</code>。<code>com.oplus.metis</code>、<code>com.oplus.dmp</code>、<code>com.heytap.speechassist</code>、<code>com.coloros.directui</code> 的短信/通话/相机/录音 appops 均为 <code>ignore</code>。</li>
+</ol>
+<hr>
+<p><em>本报告仅记录观测结果与代码/配置证据，不包含处置建议。</em></p>
+</article>
+</main>
+<footer>本页内容与审查报告原文一致，仅作排版呈现。报告仅记录观测结果与代码/配置证据。</footer>
+</body>
+</html>
